@@ -1,0 +1,806 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hoàng Bá Phúc | Data Analyst</title>
+  <meta name="description" content="Portfolio of Hoang Ba Phuc - Data Analyst specializing in Business Intelligence, Operational Analytics, and Financial Modeling." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    body {
+      background-color: #070b14;
+      color: #f1f5f9;
+    }
+    .glass-card {
+      background: rgba(15, 23, 42, 0.75);
+      backdrop-filter: blur(14px);
+      border: 1px solid rgba(59, 130, 246, 0.15);
+    }
+    .glass-card:hover {
+      border-color: rgba(96, 165, 250, 0.35);
+    }
+    .metric-badge {
+      background: radial-gradient(circle at top left, rgba(37, 99, 235, 0.18), transparent 70%);
+    }
+  </style>
+</head>
+<body class="selection:bg-blue-600 selection:text-white">
+
+  <!-- Top Navigation Bar -->
+  <nav class="fixed top-0 left-0 right-0 z-50 bg-[#070b14]/85 backdrop-blur-md border-b border-blue-950/80">
+    <div class="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
+      <a href="#" class="font-bold text-lg tracking-tight text-white hover:text-blue-400 transition-colors">
+        ethan.hoang<span class="text-blue-500">_</span>
+      </a>
+      <div class="hidden md:flex items-center space-x-7 text-sm font-medium text-slate-400">
+        <a href="#about" class="hover:text-blue-400 transition-colors">About</a>
+        <a href="#education" class="hover:text-blue-400 transition-colors">Education</a>
+        <a href="#experience" class="hover:text-blue-400 transition-colors">Experience</a>
+        <a href="#projects" class="hover:text-blue-400 transition-colors">Projects</a>
+        <a href="#skills" class="hover:text-blue-400 transition-colors">Skills</a>
+        <a href="#credentials" class="hover:text-blue-400 transition-colors">Credentials</a>
+      </div>
+      <div class="flex items-center space-x-3">
+        <a href="mailto:hoangbaphuc02@gmail.com" class="text-xs font-semibold px-4 py-2 rounded-lg bg-blue-600 hover:bg-blue-500 text-white font-bold transition-all shadow-md shadow-blue-950">
+          Get in Touch
+        </a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <header id="about" class="pt-32 pb-16 px-6 max-w-6xl mx-auto">
+    <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center mb-16">
+      
+      <!-- Bio & Headline (8 cols) -->
+      <div class="lg:col-span-8">
+        <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-blue-950/70 border border-blue-800/60 text-blue-400 text-xs font-medium mb-6">
+          <span class="w-2 h-2 rounded-full bg-blue-500 animate-pulse"></span>
+          Available for Data Analyst &amp; Business Intelligence Roles
+        </div>
+
+        <h1 class="text-4xl sm:text-6xl font-extrabold tracking-tight text-white leading-tight mb-4">
+          Hi, I'm Hoàng Bá Phúc.<br>
+          <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-200 via-blue-400 to-indigo-300">
+            Data Analyst.
+          </span>
+        </h1>
+        
+        <p class="text-xs text-slate-400 font-semibold tracking-wider uppercase mb-6 flex items-center gap-2">
+          <span>(+84) 905 896 358</span>
+          <span class="text-slate-600">•</span>
+          <span>Ho Chi Minh City</span>
+          <span class="text-slate-600">•</span>
+          <span class="text-blue-400">2002</span>
+        </p>
+
+        <p class="text-base sm:text-lg text-slate-300 leading-relaxed mb-4">
+          Detail-oriented Analyst with nearly 3 years of enterprise experience in data processing, quality assurance, and recurring business reporting. Proven track record managing <span class="text-white font-semibold">200,000+ rows per quarter</span> with a <span class="text-blue-400 font-semibold">95% defect resolution rate</span>, recognized as <span class="text-blue-400 font-semibold">Top Performer (Q1/2026)</span> at CRIF D&amp;B Vietnam.
+        </p>
+
+        <p class="text-sm text-slate-400 leading-relaxed mb-8 p-3.5 rounded-xl bg-blue-950/30 border border-blue-900/40">
+          <span class="text-blue-300 font-semibold">Career Objective:</span> Actively seeking a <span class="text-white font-medium">Data Analyst</span> role to leverage robust data handling foundations, SQL/Python pipeline engineering, and actionable business insights to support data-driven decision-making.
+        </p>
+
+        <!-- Balanced 5-Button Action Group -->
+        <div class="flex flex-wrap items-center gap-2.5">
+          <a href="#projects" class="px-4 py-2.5 rounded-lg bg-blue-600 hover:bg-blue-500 text-white font-bold text-xs sm:text-sm transition-all flex items-center gap-2 shadow-lg shadow-blue-950">
+            <i data-lucide="layers" class="w-4 h-4"></i> View Projects
+          </a>
+          <a href="https://drive.google.com/drive/folders/1UR2iTX7fBryy3X8ZHLSvKrEfCdnbKXsX?usp=sharing" target="_blank" class="px-3.5 py-2.5 rounded-lg bg-slate-900 hover:bg-slate-800 text-slate-200 text-xs sm:text-sm font-medium transition-all border border-blue-900/40 flex items-center gap-1.5">
+            <i data-lucide="file-text" class="w-4 h-4 text-blue-400"></i> CV Folder
+          </a>
+          <a href="https://drive.google.com/drive/folders/1RXh6GqYem1-wIW1nOMOkt-5cMHOvLOF5?usp=sharing" target="_blank" class="px-3.5 py-2.5 rounded-lg bg-slate-900 hover:bg-slate-800 text-slate-200 text-xs sm:text-sm font-medium transition-all border border-blue-900/40 flex items-center gap-1.5">
+            <i data-lucide="award" class="w-4 h-4 text-amber-400"></i> Certificates
+          </a>
+          
+          <a href="https://github.com/pUhCCC" target="_blank" class="px-3.5 py-2.5 rounded-lg bg-slate-900 hover:bg-slate-800 text-slate-200 hover:text-white text-xs sm:text-sm font-medium transition-all border border-blue-900/40 flex items-center gap-1.5">
+            <svg class="w-4 h-4 fill-current text-slate-300" viewBox="0 0 24 24">
+              <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/>
+            </svg>
+            <span>GitHub</span>
+          </a>
+
+          <a href="https://www.linkedin.com/in/ba-phuc-hoang/" target="_blank" class="px-3.5 py-2.5 rounded-lg bg-slate-900 hover:bg-slate-800 text-slate-200 hover:text-white text-xs sm:text-sm font-medium transition-all border border-blue-900/40 flex items-center gap-1.5">
+            <svg class="w-4 h-4 fill-current text-blue-400" viewBox="0 0 24 24">
+              <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+            </svg>
+            <span>LinkedIn</span>
+          </a>
+        </div>
+      </div>
+
+      <!-- Avatar Card -->
+      <div class="lg:col-span-4 flex justify-center">
+        <div class="relative group">
+          <div class="absolute -inset-1.5 bg-gradient-to-tr from-blue-600/30 to-cyan-500/30 rounded-2xl blur-lg opacity-75 group-hover:opacity-100 transition duration-500"></div>
+          <div class="relative w-64 h-80 sm:w-72 sm:h-96 rounded-2xl overflow-hidden border border-blue-900/50 bg-[#0c1322] shadow-2xl flex flex-col justify-end">
+            <img src="images/avatar.jpg" alt="Hoàng Bá Phúc" onerror="this.style.display='none'" class="absolute inset-0 w-full h-full object-cover object-top filter contrast-[1.05]" />
+            <div class="absolute inset-0 bg-gradient-to-t from-[#070b14] via-[#070b14]/40 to-transparent"></div>
+            <div class="relative p-5 z-10">
+              <p class="text-white font-bold text-base">Hoàng Bá Phúc</p>
+              <p class="text-xs text-blue-400 font-medium">Data Analyst • Ho Chi Minh City</p>
+              <p class="text-[11px] text-slate-400 mt-1">UEH Alumnus • Top Performer Q1/2026</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Quick Metrics Strip -->
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+      <div class="glass-card metric-badge p-5 rounded-xl">
+        <div class="text-2xl sm:text-3xl font-bold text-white mb-1">200k+</div>
+        <div class="text-xs text-slate-400 uppercase tracking-wider font-semibold">Records / Quarter</div>
+        <p class="text-xs text-slate-500 mt-1">Enterprise validation &amp; cleansing</p>
+      </div>
+      <div class="glass-card metric-badge p-5 rounded-xl">
+        <div class="text-2xl sm:text-3xl font-bold text-blue-400 mb-1">95%</div>
+        <div class="text-xs text-slate-400 uppercase tracking-wider font-semibold">Issue Resolution</div>
+        <p class="text-xs text-slate-500 mt-1">Initial raw data anomaly correction</p>
+      </div>
+      <div class="glass-card metric-badge p-5 rounded-xl">
+        <div class="text-2xl sm:text-3xl font-bold text-white mb-1">Q1/2026</div>
+        <div class="text-xs text-slate-400 uppercase tracking-wider font-semibold">Top Performer</div>
+        <p class="text-xs text-slate-500 mt-1">Awarded at CRIF D&amp;B Vietnam</p>
+      </div>
+      <div class="glass-card metric-badge p-5 rounded-xl">
+        <div class="text-2xl sm:text-3xl font-bold text-blue-400 mb-1">4 Pillars</div>
+        <div class="text-xs text-slate-400 uppercase tracking-wider font-semibold">Project Portfolio</div>
+        <p class="text-xs text-slate-500 mt-1">Retail • Logistics • Finance • Quant</p>
+      </div>
+    </div>
+  </header>
+
+  <!-- SECTION 1: Academic Background -->
+  <section id="education" class="py-16 px-6 max-w-6xl mx-auto border-t border-blue-950/80">
+    <div class="mb-8">
+      <div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-md bg-blue-950/60 border border-blue-800/60 text-blue-400 text-xs font-semibold uppercase tracking-wider mb-2">
+        Academic Foundation
+      </div>
+      <h2 class="text-2xl sm:text-3xl font-bold text-white tracking-tight">Education</h2>
+    </div>
+
+    <div class="glass-card rounded-2xl p-6 sm:p-8 border-blue-900/40 relative overflow-hidden">
+      <div class="absolute right-0 top-0 w-96 h-96 bg-blue-600/10 rounded-full blur-3xl pointer-events-none"></div>
+      
+      <div class="flex flex-col md:flex-row md:items-center justify-between gap-4 mb-6 pb-6 border-b border-blue-950">
+        <div class="flex items-center gap-4">
+          <div class="w-14 h-14 rounded-xl bg-white p-1.5 flex items-center justify-center shrink-0 shadow-md border border-blue-900/40">
+            <img src="images/ueh-logo.png" alt="UEH University" class="w-full h-full object-contain rounded-lg" />
+          </div>
+          <div>
+            <h3 class="text-xl font-bold text-white tracking-wide">University of Economics Ho Chi Minh City (UEH)</h3>
+            <p class="text-sm font-semibold text-blue-400 mt-0.5">Bachelor of Business Administration (BBA)</p>
+            <p class="text-xs text-slate-400 mt-1">Sep 2020 – Mar 2024 • Ho Chi Minh City</p>
+          </div>
+        </div>
+
+        <div class="flex items-center gap-3">
+          <div class="px-4 py-2.5 rounded-xl bg-blue-950/80 border border-blue-800/80 text-center">
+            <span class="text-[11px] text-slate-400 uppercase font-semibold block">Cumulative GPA</span>
+            <span class="text-xl font-extrabold text-blue-300">3.5 / 4.0</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-4 text-xs text-slate-300">
+        <div class="p-4 rounded-xl bg-[#0b1220] border border-blue-900/30">
+          <span class="text-blue-400 font-semibold uppercase tracking-wider block mb-1.5 flex items-center gap-1.5">
+            <i data-lucide="calculator" class="w-3.5 h-3.5"></i> Quantitative Foundations
+          </span>
+          <p class="text-slate-400 leading-relaxed">
+            Rigorous coursework in Business Statistics, Econometrics, and Quantitative Analysis applied directly to data modeling.
+          </p>
+        </div>
+
+        <div class="p-4 rounded-xl bg-[#0b1220] border border-blue-900/30">
+          <span class="text-blue-400 font-semibold uppercase tracking-wider block mb-1.5 flex items-center gap-1.5">
+            <i data-lucide="briefcase" class="w-3.5 h-3.5"></i> Operations &amp; Strategy
+          </span>
+          <p class="text-slate-400 leading-relaxed">
+            In-depth study of Supply Chain Operations, Marketing Metrics, and Corporate Strategy bridging raw numbers with commercial context.
+          </p>
+        </div>
+
+        <div class="p-4 rounded-xl bg-[#0b1220] border border-blue-900/30">
+          <span class="text-blue-400 font-semibold uppercase tracking-wider block mb-1.5 flex items-center gap-1.5">
+            <i data-lucide="pie-chart" class="w-3.5 h-3.5"></i> Corporate Finance
+          </span>
+          <p class="text-slate-400 leading-relaxed">
+            Strong foundation in Financial Statement Analysis, Working Capital Management, and Capital Budgeting.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 2: Work Experience -->
+  <section id="experience" class="py-16 px-6 max-w-6xl mx-auto border-t border-blue-950/80">
+    <div class="mb-12">
+      <div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-md bg-blue-950/60 border border-blue-800/60 text-blue-400 text-xs font-semibold uppercase tracking-wider mb-2">
+        Career Journey
+      </div>
+      <h2 class="text-2xl sm:text-3xl font-bold text-white tracking-tight">Work Experience</h2>
+      <p class="text-slate-400 text-sm mt-1">Nearly 3 years of hands-on data operations, quality control, and business reporting.</p>
+    </div>
+
+    <div class="space-y-10 border-l border-blue-900/60 ml-4 pl-6">
+      
+      <!-- CRIF D&B -->
+      <div class="relative">
+        <span class="absolute -left-[31px] top-1.5 w-3 h-3 rounded-full bg-blue-500 ring-4 ring-[#070b14]"></span>
+        
+        <div class="flex flex-wrap items-center justify-between gap-3 mb-2">
+          <div class="flex items-center gap-3">
+            <div class="w-8 h-8 rounded-lg bg-white p-1 flex items-center justify-center shrink-0 shadow-sm border border-slate-700">
+              <img src="images/crif-logo.png" alt="CRIF D&B Logo" class="w-full h-full object-contain" />
+            </div>
+            <div>
+              <span class="text-base sm:text-lg font-extrabold text-white tracking-wide">CRIF D&amp;B Vietnam LLC</span>
+              <span class="ml-2.5 px-2 py-0.5 rounded-full text-[11px] font-semibold bg-amber-950/80 border border-amber-600/60 text-amber-300">Top Performer Q1/2026</span>
+            </div>
+          </div>
+          <span class="text-xs font-medium text-slate-400 bg-slate-900 border border-blue-900/40 px-2.5 py-1 rounded-full">May 2024 – July 2026</span>
+        </div>
+
+        <h3 class="text-sm sm:text-base font-bold text-blue-400 mb-3">Data Processing &amp; Business Reporting Specialist</h3>
+        <ul class="text-sm text-slate-300 space-y-2 list-disc list-inside">
+          <li>Standardized, cleaned, and processed approximately 200,000 rows of company data per quarter using Advanced Excel and internal data tools.</li>
+          <li>Resolved up to 95% of initial data defects during validation, maintaining over 90% accuracy in recurring overseas deliverables.</li>
+          <li>Reviewed corporate financial statements, calculated key liquidity/leverage/profitability ratios, and benchmarked performance against industry peers.</li>
+        </ul>
+      </div>
+
+      <!-- ZIM Integrated Shipping -->
+      <div class="relative">
+        <span class="absolute -left-[31px] top-1.5 w-3 h-3 rounded-full bg-slate-600 ring-4 ring-[#070b14]"></span>
+        
+        <div class="flex flex-wrap items-center justify-between gap-3 mb-2">
+          <div class="flex items-center gap-3">
+            <div class="w-8 h-8 rounded-lg bg-white p-1 flex items-center justify-center shrink-0 shadow-sm border border-slate-700">
+              <img src="images/zim-logo.png" alt="ZIM Logo" class="w-full h-full object-contain" />
+            </div>
+            <span class="text-base sm:text-lg font-extrabold text-white tracking-wide">ZIM Integrated Shipping Services (Vietnam) LLC</span>
+          </div>
+          <span class="text-xs font-medium text-slate-400 bg-slate-900 border border-blue-900/40 px-2.5 py-1 rounded-full">Aug 2023 – Jan 2024</span>
+        </div>
+
+        <h3 class="text-sm sm:text-base font-bold text-slate-300 mb-3">Trade Analyst Intern</h3>
+        <ul class="text-sm text-slate-300 space-y-2 list-disc list-inside">
+          <li>Extracted and evaluated cross-border maritime shipping data including bookings, vessel utilization, freight rates, and forecasts.</li>
+          <li>Collaborated with Hong Kong regional teams to evaluate cargo mix and volume patterns to support trade profitability reviews.</li>
+        </ul>
+      </div>
+
+      <!-- HSC -->
+      <div class="relative">
+        <span class="absolute -left-[31px] top-1.5 w-3 h-3 rounded-full bg-slate-600 ring-4 ring-[#070b14]"></span>
+        
+        <div class="flex flex-wrap items-center justify-between gap-3 mb-2">
+          <div class="flex items-center gap-3">
+            <div class="w-8 h-8 rounded-lg bg-white p-1 flex items-center justify-center shrink-0 shadow-sm border border-slate-700">
+              <img src="images/hsc-logo.png" alt="HSC Logo" class="w-full h-full object-contain" />
+            </div>
+            <span class="text-base sm:text-lg font-extrabold text-white tracking-wide">Ho Chi Minh City Securities Corporation (HSC)</span>
+          </div>
+          <span class="text-xs font-medium text-slate-400 bg-slate-900 border border-blue-900/40 px-2.5 py-1 rounded-full">Mar 2023 – May 2023</span>
+        </div>
+
+        <h3 class="text-sm sm:text-base font-bold text-slate-300 mb-3">Securities Brokerage Intern</h3>
+        <ul class="text-sm text-slate-300 space-y-2 list-disc list-inside">
+          <li>Researched equity market trends, corporate financial statements, and technical analysis indicators for brokerage operations.</li>
+          <li>Acquired direct exposure to investment advisory workflows and financial risk management practices in Vietnam's securities market.</li>
+        </ul>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- SECTION 3: Featured Projects (Summary & Metrics First -> Dashboard Image Below) -->
+  <section id="projects" class="py-16 px-6 max-w-6xl mx-auto border-t border-blue-950/80">
+    <div class="mb-12">
+      <div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-md bg-blue-950/60 border border-blue-800/60 text-blue-400 text-xs font-semibold uppercase tracking-wider mb-2">
+        Proof of Work
+      </div>
+      <h2 class="text-2xl sm:text-3xl font-bold text-white tracking-tight">Featured Projects</h2>
+      <p class="text-slate-400 text-sm mt-1">End-to-end analytical problem solving with verified production mindset across 4 key domains.</p>
+    </div>
+
+    <div class="space-y-16">
+
+      <!-- PROJECT 1: Retail Analytics -->
+      <div class="glass-card rounded-2xl p-6 sm:p-8 hover:shadow-2xl transition-all">
+        <div class="flex flex-wrap items-center gap-2 mb-4">
+          <span class="px-2.5 py-1 rounded-md text-xs font-semibold bg-blue-950/70 border border-blue-800 text-blue-300">E-Commerce &amp; Retail</span>
+          <span class="px-2.5 py-1 rounded-md text-xs font-semibold bg-slate-800 text-slate-300">62,884 Transactions</span>
+          <span class="px-2.5 py-1 rounded-md text-xs font-semibold bg-slate-800 text-slate-300">Advanced SQL (Window/CTEs)</span>
+          <span class="px-2.5 py-1 rounded-md text-xs font-semibold bg-slate-800 text-slate-300">Cohort Retention</span>
+          <span class="px-2.5 py-1 rounded-md text-xs font-semibold bg-slate-800 text-slate-300">FX Normalization</span>
+        </div>
+
+        <h3 class="text-2xl font-bold text-white mb-3">Global Electronics Retail Analytics — SLA Performance &amp; Store Space Efficiency</h3>
+        <p class="text-sm text-slate-300 leading-relaxed mb-6">
+          Evaluated multi-channel retail operations, customer cohort retention, and physical store space efficiency across 62,884 transactions ($55.75M USD Total Revenue) from an electronics retailer operating across 8 countries (2018–2020).
+        </p>
+
+        <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 mb-6 p-4 rounded-xl bg-[#0b1220] border border-blue-900/30">
+          <div>
+            <span class="text-xs text-slate-400 uppercase font-semibold">Total Revenue</span>
+            <p class="text-lg font-bold text-white">$55.75M</p>
+            <span class="text-[11px] text-blue-400">$44.35M In-Store (79.5%)</span>
+          </div>
+          <div>
+            <span class="text-xs text-slate-400 uppercase font-semibold">Gross Margin</span>
+            <p class="text-lg font-bold text-white">58.58%</p>
+            <span class="text-[11px] text-slate-400">Stable across channels</span>
+          </div>
+          <div>
+            <span class="text-xs text-slate-400 uppercase font-semibold">Canada Delay Rate</span>
+            <p class="text-lg font-bold text-rose-400">11.41%</p>
+            <span class="text-[11px] text-slate-400">Highest regional SLA delay</span>
+          </div>
+          <div>
+            <span class="text-xs text-slate-400 uppercase font-semibold">US Revenue at Risk</span>
+            <p class="text-lg font-bold text-amber-400">$558.6K</p>
+            <span class="text-[11px] text-slate-400">592 delayed orders</span>
+          </div>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6">
+          <div class="p-4 rounded-xl bg-slate-900/60 border border-blue-900/30">
+            <h4 class="text-xs uppercase tracking-wider font-semibold text-blue-400 mb-2 flex items-center gap-1.5">
+              <i data-lucide="terminal" class="w-3.5 h-3.5"></i> SQL Engineering &amp; ELT Architecture
+            </h4>
+            <ul class="text-xs text-slate-300 space-y-1.5 list-disc list-inside">
+              <li>Normalized multi-currency sales (EUR, AUD, GBP, CAD &rarr; USD) linking exchange rates via composite keys <code class="text-blue-300">(Order Date, Currency Code)</code>.</li>
+              <li>Tracked <strong>Cohort Retention (2018 Cohort, N=3,104)</strong>: Year 0 (100%) &rarr; Year 1 (44.81%) &rarr; Year 2 (27.29%). Found macro convergence to 25%–27% in 2020.</li>
+              <li>Calculated spatial revenue density: US leads at $109.24/m², while France achieves $108.79/m² utilizing compact boutique layouts (~341 m²/store).</li>
+            </ul>
+          </div>
+
+          <div class="p-4 rounded-xl bg-slate-900/60 border border-blue-900/30">
+            <h4 class="text-xs uppercase tracking-wider font-semibold text-emerald-400 mb-2 flex items-center gap-1.5">
+              <i data-lucide="trending-up" class="w-3.5 h-3.5"></i> Strategic Recommendations
+            </h4>
+            <ul class="text-xs text-slate-300 space-y-1.5 list-disc list-inside">
+              <li>Deploy priority automated routing for US orders &gt;$1,000 to safeguard $558.6K in high-value orders from delivery friction.</li>
+              <li>Halt large-format store expansion in Australia ($34.56/m² across ~1,543 m²/store) and execute a store footprint downsizing audit.</li>
+              <li>Launch an automated VIP loyalty re-engagement campaign at Month 9 to bridge the ~55% churn cliff between Year 1 and Year 2.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="mb-6 rounded-xl overflow-hidden border border-blue-900/30 bg-slate-950/60 p-2 sm:p-3">
+          <img src="images/retail-dashboard.png" alt="Retail Analytics Dashboard" class="w-full h-auto object-cover rounded-lg hover:scale-[1.01] transition duration-500" />
+        </div>
+
+        <div class="flex flex-wrap items-center gap-3">
+          <a href="https://puhccc.github.io/Retails-Analyst_Dashboard/" target="_blank" class="px-4 py-2 rounded-lg bg-blue-600 hover:bg-blue-500 text-xs font-bold text-white transition-all flex items-center gap-1.5 shadow-md shadow-blue-950">
+            <i data-lucide="external-link" class="w-3.5 h-3.5"></i> Interactive Live Dashboard
+          </a>
+          <a href="https://github.com/pUhCCC/Global-Electronics-Retail-Analytics" target="_blank" class="px-4 py-2 rounded-lg bg-slate-800 hover:bg-slate-700 text-xs font-semibold text-slate-200 transition-all flex items-center gap-1.5 border border-slate-700">
+            <i data-lucide="github" class="w-3.5 h-3.5"></i> View GitHub Repository
+          </a>
+        </div>
+      </div>
+
+      <!-- PROJECT 2: Logistics Operations -->
+      <div class="glass-card rounded-2xl p-6 sm:p-8 hover:shadow-2xl transition-all">
+        <div class="flex flex-wrap items-center gap-2 mb-4">
+          <span class="px-2.5 py-1 rounded-md text-xs font-semibold bg-blue-950/70 border border-blue-800 text-blue-300">Supply Chain &amp; Logistics</span>
+          <span class="px-2.5 py-1 rounded-md text-xs font-semibold bg-slate-800 text-slate-300">49,800 Shipments</span>
+          <span class="px-2.5 py-1 rounded-md text-xs font-semibold bg-slate-800 text-slate-300">Python (Pandas)</span>
+          <span class="px-2.5 py-1 rounded-md text-xs font-semibold bg-slate-800 text-slate-300">SQLite Star Schema</span>
+          <span class="px-2.5 py-1 rounded-md text-xs font-semibold bg-slate-800 text-slate-300">DAX Iterators</span>
+        </div>
+
+        <h3 class="text-2xl font-bold text-white mb-3">Logistics &amp; Port Operations Performance — SLA Compliance &amp; Bottlenecks</h3>
+        <p class="text-sm text-slate-300 leading-relaxed mb-6">
+          Evaluated operational performance and SLA compliance across 49,800 maritime shipments through 4 key container terminals ($42.16M shipping spend pool). System-wide turnaround averaged 23.51 hours against a &lt;24h benchmark.
+        </p>
+
+        <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 mb-6 p-4 rounded-xl bg-[#0b1220] border border-blue-900/30">
+          <div>
+            <span class="text-xs text-slate-400 uppercase font-semibold">Total Shipments</span>
+            <p class="text-lg font-bold text-white">49.8K</p>
+            <span class="text-[11px] text-blue-400">Cleaned from 50.1K rows</span>
+          </div>
+          <div>
+            <span class="text-xs text-slate-400 uppercase font-semibold">Avg Turnaround</span>
+            <p class="text-lg font-bold text-white">23.51h</p>
+            <span class="text-[11px] text-blue-400">Target met (&lt;24h)</span>
+          </div>
+          <div>
+            <span class="text-xs text-slate-400 uppercase font-semibold">Premium Delay Rate</span>
+            <p class="text-lg font-bold text-rose-400">12.18%</p>
+            <span class="text-[11px] text-rose-400 font-medium">SLA Inversion Alert</span>
+          </div>
+          <div>
+            <span class="text-xs text-slate-400 uppercase font-semibold">Cost of Delays</span>
+            <p class="text-lg font-bold text-amber-400">$5.01M</p>
+            <span class="text-[11px] text-slate-400">11.89% of freight spend</span>
+          </div>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6">
+          <div class="p-4 rounded-xl bg-slate-900/60 border border-blue-900/30">
+            <h4 class="text-xs uppercase tracking-wider font-semibold text-blue-400 mb-2 flex items-center gap-1.5">
+              <i data-lucide="database" class="w-3.5 h-3.5"></i> Data Pipeline &amp; Star Schema
+            </h4>
+            <ul class="text-xs text-slate-300 space-y-1.5 list-disc list-inside">
+              <li>Automated cleaning script resolving 100 hidden duplicate IDs, median-imputing 501 missing <code class="text-blue-300">Weight_Tons</code>, and pruning 201 unrecorded timestamps.</li>
+              <li>Deployed a Star Schema in SQLite (<code class="text-blue-300">Fact_Shipments</code> joined to <code class="text-blue-300">Dim_Ports</code>, <code class="text-blue-300">Dim_Clients</code>, <code class="text-blue-300">Dim_Date</code>).</li>
+              <li>Used DAX iterators (<code class="text-blue-300">AVERAGEX</code>) to compute turnaround duration down to exact minute precision.</li>
+            </ul>
+          </div>
+
+          <div class="p-4 rounded-xl bg-slate-900/60 border border-blue-900/30">
+            <h4 class="text-xs uppercase tracking-wider font-semibold text-amber-400 mb-2 flex items-center gap-1.5">
+              <i data-lucide="alert-triangle" class="w-3.5 h-3.5"></i> The SLA Inversion Bottleneck
+            </h4>
+            <ul class="text-xs text-slate-300 space-y-1.5 list-disc list-inside">
+              <li><strong>The SLA Inversion:</strong> Premium clients suffer higher delay rates (<strong>12.18%</strong>) than Standard clients (<strong>11.72%</strong>), endangering high-margin JIT accounts.</li>
+              <li>Cat Lai Port acts as the core bottleneck with delayed rates reaching 12.28% due to peak gate congestion.</li>
+              <li><strong>Action:</strong> Divert 15% of Standard cargo to Cai Mep (projected 12% turnaround gain) and institute an "Express Gate" protocol for Premium shipments.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="mb-6 rounded-xl overflow-hidden border border-blue-900/30 bg-slate-950/60 p-2 sm:p-3">
+          <img src="images/logistics-dashboard.png" alt="Logistics Operations Dashboard" class="w-full h-auto object-cover rounded-lg hover:scale-[1.01] transition duration-500" />
+        </div>
+
+        <div class="flex flex-wrap items-center gap-3">
+          <a href="https://puhccc.github.io/Logistics_html_dashboard/" target="_blank" class="px-4 py-2 rounded-lg bg-blue-600 hover:bg-blue-500 text-xs font-bold text-white transition-all flex items-center gap-1.5 shadow-md shadow-blue-950">
+            <i data-lucide="external-link" class="w-3.5 h-3.5"></i> Interactive Live Dashboard
+          </a>
+          <a href="https://github.com/pUhCCC/Logistics-Port-Operations-Performance" target="_blank" class="px-4 py-2 rounded-lg bg-slate-800 hover:bg-slate-700 text-xs font-semibold text-slate-200 transition-all flex items-center gap-1.5 border border-slate-700">
+            <i data-lucide="github" class="w-3.5 h-3.5"></i> View GitHub Repository
+          </a>
+        </div>
+      </div>
+
+      <!-- PROJECT 3: Gemadept Financial Statement Analysis (Drive Link Updated) -->
+      <div class="glass-card rounded-2xl p-6 sm:p-8 hover:shadow-2xl transition-all">
+        <div class="flex flex-wrap items-center gap-2 mb-4">
+          <span class="px-2.5 py-1 rounded-md text-xs font-semibold bg-blue-950/70 border border-blue-800 text-blue-300">Corporate Financial Analysis</span>
+          <span class="px-2.5 py-1 rounded-md text-xs font-semibold bg-slate-800 text-slate-300">HOSE: GMD</span>
+          <span class="px-2.5 py-1 rounded-md text-xs font-semibold bg-slate-800 text-slate-300">Excel Financial Modeling</span>
+          <span class="px-2.5 py-1 rounded-md text-xs font-semibold bg-slate-800 text-slate-300">Earnings Quality</span>
+          <span class="px-2.5 py-1 rounded-md text-xs font-semibold bg-slate-800 text-slate-300">Industry Median Benchmarking</span>
+        </div>
+
+        <h3 class="text-2xl font-bold text-white mb-3">Gemadept Corporation — Financial Performance, Earnings Quality &amp; Benchmark</h3>
+        <p class="text-sm text-slate-300 leading-relaxed mb-6">
+          Assessed whether Gemadept's FY2024 revenue rebound (+25.6% YoY to VND 4,832 billion) translated into resilient core operations and balance-sheet strength, benchmarked against aggregated logistics industry medians.
+        </p>
+
+        <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 mb-6 p-4 rounded-xl bg-[#0b1220] border border-blue-900/30">
+          <div>
+            <span class="text-xs text-slate-400 uppercase font-semibold">FY2024 Revenue</span>
+            <p class="text-lg font-bold text-white">4,832B</p>
+            <span class="text-[11px] text-blue-400">+25.6% YoY Rebound</span>
+          </div>
+          <div>
+            <span class="text-xs text-slate-400 uppercase font-semibold">Core Op Margin</span>
+            <p class="text-lg font-bold text-white">27.2%</p>
+            <span class="text-[11px] text-slate-400">Reconstructed (1,313B)</span>
+          </div>
+          <div>
+            <span class="text-xs text-slate-400 uppercase font-semibold">Current Ratio</span>
+            <p class="text-lg font-bold text-blue-400">3.18x</p>
+            <span class="text-[11px] text-slate-400">vs 1.35x peer median</span>
+          </div>
+          <div>
+            <span class="text-xs text-slate-400 uppercase font-semibold">Cash Cycle (CCC)</span>
+            <p class="text-lg font-bold text-blue-400">38.7d</p>
+            <span class="text-[11px] text-slate-400">vs 83.1d peer median</span>
+          </div>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6">
+          <div class="p-4 rounded-xl bg-slate-900/60 border border-blue-900/30">
+            <h4 class="text-xs uppercase tracking-wider font-semibold text-blue-400 mb-2 flex items-center gap-1.5">
+              <i data-lucide="file-check" class="w-3.5 h-3.5"></i> Earnings-Quality Assessment
+            </h4>
+            <ul class="text-xs text-slate-300 space-y-1.5 list-disc list-inside">
+              <li>Reconstructed <strong>Core Operating Profit</strong>: <code class="text-blue-300">Gross Profit - SG&amp;A</code> grew +17.6% YoY to VND 1,313 billion, proving core operational resilience.</li>
+              <li>Identified FY2023 PAT distortion: Non-core financial income accounted for <strong>70.4% of PBT</strong>, explaining the high profit base without operational expansion.</li>
+              <li>Maintained net cash position (Net D/E: -0.13x) and low balance-sheet leverage (Total Liabilities / Equity: 0.31x vs 1.24x industry median).</li>
+            </ul>
+          </div>
+
+          <div class="p-4 rounded-xl bg-slate-900/60 border border-blue-900/30">
+            <h4 class="text-xs uppercase tracking-wider font-semibold text-emerald-400 mb-2 flex items-center gap-1.5">
+              <i data-lucide="award" class="w-3.5 h-3.5"></i> Deliverables &amp; Methodology
+            </h4>
+            <ul class="text-xs text-slate-300 space-y-1.5 list-disc list-inside">
+              <li>Formulated formula-driven Excel models mapping consolidated Balance Sheets, P&amp;L, and Working Capital cycles.</li>
+              <li>Compared performance against aggregated industry medians to eliminate outlier distortion in arithmetic means.</li>
+              <li>Reconstructed from public audited financial statements (HOSE: GMD) strictly for analytical portfolio evaluation.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="mb-6 rounded-xl overflow-hidden border border-blue-900/30 bg-slate-950/60 p-2 sm:p-3">
+          <img src="images/gemadept-dashboard.png" alt="Gemadept Financial Statement Dashboard" class="w-full h-auto object-cover rounded-lg hover:scale-[1.01] transition duration-500" />
+        </div>
+
+        <div class="flex flex-wrap items-center gap-3">
+          <a href="https://drive.google.com/drive/folders/1yxnrz3gxNjkEH_lJ2NV1OFTp3Oe4JAS2?usp=sharing" target="_blank" class="px-4 py-2 rounded-lg bg-blue-600 hover:bg-blue-500 text-xs font-bold text-white transition-all flex items-center gap-1.5 shadow-md shadow-blue-950">
+            <i data-lucide="file-text" class="w-3.5 h-3.5"></i> View Executive Summary PDF &amp; Model
+          </a>
+        </div>
+      </div>
+
+      <!-- PROJECT 4: Quantitative Risk Analytics -->
+      <div class="glass-card rounded-2xl p-6 sm:p-8 hover:shadow-2xl transition-all">
+        <div class="flex flex-wrap items-center gap-2 mb-4">
+          <span class="px-2.5 py-1 rounded-md text-xs font-semibold bg-blue-950/70 border border-blue-800 text-blue-300">Quantitative Risk</span>
+          <span class="px-2.5 py-1 rounded-md text-xs font-semibold bg-slate-800 text-slate-300">1,920 Trading Sessions</span>
+          <span class="px-2.5 py-1 rounded-md text-xs font-semibold bg-slate-800 text-slate-300">Python (Pandas)</span>
+          <span class="px-2.5 py-1 rounded-md text-xs font-semibold bg-slate-800 text-slate-300">Drawdown Tracking</span>
+          <span class="px-2.5 py-1 rounded-md text-xs font-semibold bg-slate-800 text-slate-300">Wyckoff VSA Logic</span>
+        </div>
+
+        <h3 class="text-2xl font-bold text-white mb-3">Portfolio Risk &amp; Wyckoff Volume Analytics (2022 – 2024)</h3>
+        <p class="text-sm text-slate-300 leading-relaxed mb-6">
+          Evaluated downside tail-risk profiles and institutional volume-price footprints across 1,920 trading sessions for 3 Vietnamese bluechips (FPT, HPG, VCB). Replaced naive returns with Peak-to-Trough Maximum Drawdown and Volume Spread Analysis (VSA).
+        </p>
+
+        <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 mb-6 p-4 rounded-xl bg-[#0b1220] border border-blue-900/30">
+          <div>
+            <span class="text-xs text-slate-400 uppercase font-semibold">FPT Max Drawdown</span>
+            <p class="text-lg font-bold text-blue-400">-30.77%</p>
+            <span class="text-[11px] text-slate-400">Defensive portfolio anchor</span>
+          </div>
+          <div>
+            <span class="text-xs text-slate-400 uppercase font-semibold">HPG Max Drawdown</span>
+            <p class="text-lg font-bold text-rose-400">-68.68%</p>
+            <span class="text-[11px] text-slate-400">Severe cyclical drawdown</span>
+          </div>
+          <div>
+            <span class="text-xs text-slate-400 uppercase font-semibold">Total SOS Alerts</span>
+            <p class="text-lg font-bold text-emerald-400">41 Sessions</p>
+            <span class="text-[11px] text-slate-400">Institutional absorption</span>
+          </div>
+          <div>
+            <span class="text-xs text-slate-400 uppercase font-semibold">Total SOW Alerts</span>
+            <p class="text-lg font-bold text-rose-400">19 Sessions</p>
+            <span class="text-[11px] text-slate-400">Distribution red flags</span>
+          </div>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6">
+          <div class="p-4 rounded-xl bg-slate-900/60 border border-blue-900/30">
+            <h4 class="text-xs uppercase tracking-wider font-semibold text-blue-400 mb-2 flex items-center gap-1.5">
+              <i data-lucide="cpu" class="w-3.5 h-3.5"></i> Quantitative Methodology &amp; VSA
+            </h4>
+            <ul class="text-xs text-slate-300 space-y-1.5 list-disc list-inside">
+              <li>Vectorized risk modeling in Python computing daily return, cumulative peak via <code class="text-blue-300">cummax()</code>, and dynamic underwater drawdowns.</li>
+              <li>Formulated Wyckoff volume thresholds at <code class="text-blue-300">Volume &ge; 1.8 &times; MA20</code>.</li>
+              <li>Identified <strong>22 Effort vs. Result Anomalies</strong> in FPT (heavy volume with narrow spread), signaling strong institutional accumulation floors.</li>
+            </ul>
+          </div>
+
+          <div class="p-4 rounded-xl bg-slate-900/60 border border-blue-900/30">
+            <h4 class="text-xs uppercase tracking-wider font-semibold text-emerald-400 mb-2 flex items-center gap-1.5">
+              <i data-lucide="shield-check" class="w-3.5 h-3.5"></i> Capital Preservation Strategy
+            </h4>
+            <ul class="text-xs text-slate-300 space-y-1.5 list-disc list-inside">
+              <li><strong>Core–Satellite Allocation:</strong> Maintain a 70% core weight in resilient assets (FPT/VCB) to contain aggregate portfolio MDD within institutional tolerances (&lt;-35%).</li>
+              <li>Identified 8 SOW alerts in HPG preceding steep markdowns, mandating dynamic -8% to -10% stop-loss rules rather than passive holding.</li>
+              <li>Engineered an automated rule: cut exposure by 50% upon detecting 2 consecutive SOW alerts within a 10-day rolling window.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="mb-6 rounded-xl overflow-hidden border border-blue-900/30 bg-slate-950/60 p-2 sm:p-3">
+          <img src="images/risk-dashboard.png" alt="Portfolio Risk Dashboard" class="w-full h-auto object-cover rounded-lg hover:scale-[1.01] transition duration-500" />
+        </div>
+
+        <div class="flex flex-wrap items-center gap-3">
+          <a href="https://puhccc.github.io/Porfolio_Risk_html_dashboard/" target="_blank" class="px-4 py-2 rounded-lg bg-blue-600 hover:bg-blue-500 text-xs font-bold text-white transition-all flex items-center gap-1.5 shadow-md shadow-blue-950">
+            <i data-lucide="external-link" class="w-3.5 h-3.5"></i> Interactive Live Dashboard
+          </a>
+          <a href="https://github.com/pUhCCC/Portfolio_Risk_Wyckoff_Analytics_Project" target="_blank" class="px-4 py-2 rounded-lg bg-slate-800 hover:bg-slate-700 text-xs font-semibold text-slate-200 transition-all flex items-center gap-1.5 border border-slate-700">
+            <i data-lucide="github" class="w-3.5 h-3.5"></i> View GitHub Repository
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- SECTION 4: Technical Skills Grid -->
+  <section id="skills" class="py-16 px-6 max-w-6xl mx-auto border-t border-blue-950/80">
+    <div class="mb-12">
+      <div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-md bg-blue-950/60 border border-blue-800/60 text-blue-400 text-xs font-semibold uppercase tracking-wider mb-2">
+        Core Capabilities
+      </div>
+      <h2 class="text-2xl sm:text-3xl font-bold text-white tracking-tight">Technical Skills &amp; Stack</h2>
+      <p class="text-slate-400 text-sm mt-1">A disciplined analytical toolkit combining data pipelines, BI, and financial modeling.</p>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+      <div class="glass-card p-6 rounded-xl">
+        <div class="w-8 h-8 rounded-lg bg-blue-950 border border-blue-800 flex items-center justify-center text-blue-400 mb-4">
+          <i data-lucide="git-branch" class="w-4 h-4"></i>
+        </div>
+        <h3 class="font-bold text-white mb-2">Data Processing</h3>
+        <p class="text-xs text-slate-400 leading-relaxed">
+          Python (Pandas, NumPy), Advanced Excel, Data Cleaning Scripts, Schema Standardization.
+        </p>
+      </div>
+
+      <div class="glass-card p-6 rounded-xl">
+        <div class="w-8 h-8 rounded-lg bg-indigo-950 border border-indigo-800 flex items-center justify-center text-indigo-400 mb-4">
+          <i data-lucide="database" class="w-4 h-4"></i>
+        </div>
+        <h3 class="font-bold text-white mb-2">Databases &amp; Modeling</h3>
+        <p class="text-xs text-slate-400 leading-relaxed">
+          Advanced SQL (Window Functions, CTEs, Joins), SQLite, Star Schema Dimensional Design.
+        </p>
+      </div>
+
+      <div class="glass-card p-6 rounded-xl">
+        <div class="w-8 h-8 rounded-lg bg-cyan-950 border border-cyan-800 flex items-center justify-center text-cyan-400 mb-4">
+          <i data-lucide="bar-chart-3" class="w-4 h-4"></i>
+        </div>
+        <h3 class="font-bold text-white mb-2">BI &amp; Visualization</h3>
+        <p class="text-xs text-slate-400 leading-relaxed">
+          Power BI, Advanced DAX (Time Intelligence, Iterators), Executive Reporting, GitHub Pages.
+        </p>
+      </div>
+
+      <div class="glass-card p-6 rounded-xl">
+        <div class="w-8 h-8 rounded-lg bg-blue-950 border border-blue-800 flex items-center justify-center text-blue-400 mb-4">
+          <i data-lucide="landmark" class="w-4 h-4"></i>
+        </div>
+        <h3 class="font-bold text-white mb-2">Financial Analysis</h3>
+        <p class="text-xs text-slate-400 leading-relaxed">
+          Financial Statement Modeling, Earnings Quality Adjustments, Peer Median Benchmarks, Drawdown Risk.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 5: Professional Credentials & Certifications -->
+  <section id="credentials" class="py-16 px-6 max-w-6xl mx-auto border-t border-blue-950/80">
+    <div class="mb-12 flex flex-wrap items-center justify-between gap-4">
+      <div>
+        <div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-md bg-blue-950/60 border border-blue-800/60 text-blue-400 text-xs font-semibold uppercase tracking-wider mb-2">
+          Verified Credentials
+        </div>
+        <h2 class="text-2xl sm:text-3xl font-bold text-white tracking-tight">Certifications &amp; Achievements</h2>
+        <p class="text-slate-400 text-sm mt-1">Verified industry certifications and recognized enterprise awards.</p>
+      </div>
+      <a href="https://drive.google.com/drive/folders/1RXh6GqYem1-wIW1nOMOkt-5cMHOvLOF5?usp=sharing" target="_blank" class="px-4 py-2 rounded-lg bg-slate-900 hover:bg-slate-800 text-blue-400 text-xs font-semibold transition-all border border-blue-900/40 flex items-center gap-2">
+        <i data-lucide="external-link" class="w-3.5 h-3.5"></i> Open Full Certificate Drive
+      </a>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+      
+      <!-- Top Performer CRIF -->
+      <div class="glass-card p-5 rounded-xl flex items-start gap-4">
+        <div class="w-10 h-10 rounded-lg bg-white p-1 flex items-center justify-center shrink-0 shadow-sm border border-slate-700 mt-1">
+          <img src="images/crif-logo.png" alt="CRIF D&B" class="w-full h-full object-contain" />
+        </div>
+        <div>
+          <h3 class="font-bold text-white text-sm">Top Performer Award — Q1/2026</h3>
+          <p class="text-xs text-slate-400">CRIF D&amp;B Vietnam LLC</p>
+          <p class="text-xs text-amber-400 font-medium mt-1">Top volume &amp; 95% defect resolution</p>
+        </div>
+      </div>
+
+      <!-- Google Data Analytics -->
+      <div class="glass-card p-5 rounded-xl flex items-start gap-4">
+        <div class="w-10 h-10 rounded-lg bg-white p-1 flex items-center justify-center shrink-0 shadow-sm border border-slate-700 mt-1">
+          <img src="images/google-logo.png" alt="Google" class="w-full h-full object-contain" />
+        </div>
+        <div>
+          <h3 class="font-bold text-white text-sm">Google Data Analytics Professional</h3>
+          <p class="text-xs text-slate-400">Google (via Coursera)</p>
+          <p class="text-xs text-slate-500 mt-1">End-to-end data analysis methodology</p>
+        </div>
+      </div>
+
+      <!-- SQL Advanced Xom Data -->
+      <div class="glass-card p-5 rounded-xl flex items-start gap-4">
+        <div class="p-2.5 rounded-lg bg-slate-900 border border-blue-900/40 text-indigo-400 mt-1">
+          <i data-lucide="database" class="w-5 h-5"></i>
+        </div>
+        <div>
+          <h3 class="font-bold text-white text-sm">SQL Advanced Certificate</h3>
+          <p class="text-xs text-slate-400">Xóm Data</p>
+          <p class="text-xs text-blue-400 font-semibold mt-1">Complex Joins, Window Functions, CTEs</p>
+        </div>
+      </div>
+
+      <!-- Python Advanced Xom Data -->
+      <div class="glass-card p-5 rounded-xl flex items-start gap-4">
+        <div class="p-2.5 rounded-lg bg-slate-900 border border-blue-900/40 text-cyan-400 mt-1">
+          <i data-lucide="code" class="w-5 h-5"></i>
+        </div>
+        <div>
+          <h3 class="font-bold text-white text-sm">Python Advanced Certificate</h3>
+          <p class="text-xs text-slate-400">Xóm Data</p>
+          <p class="text-xs text-blue-400 font-semibold mt-1">Pandas Pipelines &amp; Vectorization</p>
+        </div>
+      </div>
+
+      <!-- Cole Bootcamp -->
+      <div class="glass-card p-5 rounded-xl flex items-start gap-4">
+        <div class="w-10 h-10 rounded-lg bg-white p-1 flex items-center justify-center shrink-0 shadow-sm border border-slate-700 mt-1">
+          <img src="images/cole-logo.png" alt="Cole.vn" class="w-full h-full object-contain" />
+        </div>
+        <div>
+          <h3 class="font-bold text-white text-sm">Bootcamp Data Analysis with Python</h3>
+          <p class="text-xs text-slate-400">Cole.vn Certificate</p>
+          <p class="text-xs text-slate-500 mt-1">Python for business data modeling</p>
+        </div>
+      </div>
+
+      <!-- TOEIC -->
+      <div class="glass-card p-5 rounded-xl flex items-start gap-4">
+        <div class="w-10 h-10 rounded-lg bg-white p-1 flex items-center justify-center shrink-0 shadow-sm border border-slate-700 mt-1">
+          <img src="images/toeic-logo.png" alt="TOEIC ETS" class="w-full h-full object-contain" />
+        </div>
+        <div>
+          <h3 class="font-bold text-white text-sm">TOEIC Listening &amp; Reading</h3>
+          <p class="text-xs text-slate-400">ETS Certificate</p>
+          <p class="text-xs text-emerald-400 font-semibold mt-1">Score: 840 / 990</p>
+        </div>
+      </div>
+
+      <!-- IC3 -->
+      <div class="glass-card p-5 rounded-xl flex items-start gap-4">
+        <div class="p-2.5 rounded-lg bg-slate-900 border border-blue-900/40 text-slate-400 mt-1">
+          <i data-lucide="check-circle" class="w-5 h-5"></i>
+        </div>
+        <div>
+          <h3 class="font-bold text-white text-sm">IC3 Digital Literacy Certificate</h3>
+          <p class="text-xs text-slate-400">Certiport</p>
+          <p class="text-xs text-slate-500 mt-1">Computing fundamentals &amp; applications</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="py-12 px-6 max-w-6xl mx-auto border-t border-blue-950/80 text-center text-xs text-slate-500">
+    <div class="flex justify-center items-center gap-6 mb-4">
+      <a href="mailto:hoangbaphuc02@gmail.com" class="hover:text-blue-400 transition-colors">Email</a>
+      <a href="https://www.linkedin.com/in/ba-phuc-hoang/" target="_blank" class="hover:text-blue-400 transition-colors">LinkedIn</a>
+      <a href="https://github.com/pUhCCC" target="_blank" class="hover:text-blue-400 transition-colors">GitHub</a>
+      <a href="https://drive.google.com/drive/folders/1UR2iTX7fBryy3X8ZHLSvKrEfCdnbKXsX?usp=sharing" target="_blank" class="hover:text-blue-400 transition-colors">CV Folder</a>
+      <a href="https://drive.google.com/drive/folders/1RXh6GqYem1-wIW1nOMOkt-5cMHOvLOF5?usp=sharing" target="_blank" class="hover:text-blue-400 transition-colors">Certificates Folder</a>
+    </div>
+    <p>© 2026 Hoàng Bá Phúc. Built with modern web standards and disciplined data analytics.</p>
+  </footer>
+
+  <script>
+    // Initialize Lucide Icons
+    lucide.createIcons();
+  </script>
+</body>
+</html>
